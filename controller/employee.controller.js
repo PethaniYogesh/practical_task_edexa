@@ -2,6 +2,9 @@ const employeeModel = require("../models/employee.model");
 const employeeValidator = require('../validator/employee.validator');
 const utilities = require('../utils');
 
+/**
+* Get all Employee records
+*/
 const getEmployees = async (req, res) => {
     try {
         let getEmployees = await employeeModel.find();
@@ -14,6 +17,9 @@ const getEmployees = async (req, res) => {
     }
 }
 
+/**
+* Create new Employee record
+*/
 const createEmployee = async (req, res) => {
     try {
         const { name, email, phoneNumber } = req.body || {};
@@ -31,6 +37,9 @@ const createEmployee = async (req, res) => {
     }
 }
 
+/**
+* Update existing Employee records
+*/
 const updateEmployee = async (req, res) => {
     try {
         const { _id } = req.params || {};
@@ -49,6 +58,9 @@ const updateEmployee = async (req, res) => {
     }
 }
 
+/**
+* Delete existing Employee records
+*/
 const deleteEmployee= async (req, res) => {
     try {
 
