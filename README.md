@@ -32,9 +32,9 @@ That's it you have successfully imported my projects and executed them on your c
 
 	POST: http://localhost:3000/api/v1/employee/create   (To create new Employee records)
 	pass payload: {
-    "name": "Test",
+    "name": "Test", 
     "email": "TEST@gmail.com",  
-    "phoneNumber": 98014231212323
+    "phoneNumber": 9801423121
     }
 
 	PUT: http://localhost:3000/api/v1/employee/update/:_id   (To update existing Employee records)
@@ -42,7 +42,7 @@ That's it you have successfully imported my projects and executed them on your c
  	payload: {
     "name": "Test_Update”,
     "email": "TEST@gmail.com",  
-    "phoneNumber": 98014231212323
+    "phoneNumber": 9801423121
     }
 
 	DELETE: http://localhost:3000/api/v1/employee/delete/:_id  (To delete existing Employee records)
